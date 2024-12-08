@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="css/signin.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Vandita's Clinic</h1>
+        <p>Your health, our priority</p>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Please Select an Option</h2>
+            <div class="options">
+                <button id="signup-btn">Sign Up</button>
+                <button id="login-btn">Log In</button>
+            </div>
+            <div class="form-container" id="form-container">
+                <!-- Sign-Up Form -->
+                <form id="signup-form" class="form hidden">
+                    <h3>Sign Up</h3>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <!-- Log-In Form -->
+                <form id="login-form" class="form hidden">
+                    <h3>Log In</h3>
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/signin.js"></script> <!-- Link to JS -->
+</body>
+</html>
